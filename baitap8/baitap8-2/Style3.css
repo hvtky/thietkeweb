@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Handlee&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    margin: 20px 50px;
+    gap: 20px;
+    font-family: "Dosis", sans-serif;
+    font-style: normal;
+}
+header{
+    height: 600px;
+    display: grid;
+    grid-template-rows: 100px 400px;
+    background-image: url("images3/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+header .bar{
+    display: grid;
+    grid-template-areas: "logo links";
+    align-items: center;
+    background-color: rgba(124, 124, 124, 0.9);
+    z-index: 1;
+}
+.logo img{
+    max-width: 96px;
+    margin-left: 20px;
+}
+.links{
+    margin-left: auto;
+    margin-right: 30px;
+}
+.links a{
+    margin-left: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.links a:hover {
+    color: lightcoral;
+}
+.button{
+    padding: 10px 10px;
+    border: 2px white;
+    border-radius: 100px;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 200px;
+}
+.button:hover{
+    color: lightcoral;
+}
+.hero{
+    display: grid;
+    color: white;
+    z-index: 2;
+}
+.hero em, strong, a.button{
+    margin: auto;
+    text-transform: uppercase;
+}
+.hero em{
+    font-size: 24px;
+    font-weight: 500;
+}
+.hero strong{
+    font-size: 70px;
+    font-weight: 600;
+}
+.hero > a.button{
+    border: 2px white;
+    border-radius: 100px;
+    background-color: #dcb87e;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    width: 100px;
+    text-align: center;
+}
+a.button:hover{
+    background-color: rgb(68, 44, 141);
+    color: rgb(231, 76, 140);
+}
+
+.list-row{
+    display: grid;
+    grid-template-areas: "main" "rows";
+}
+.main{
+    text-align: center;
+    margin: 50px 80px;
+    height: 150px;
+}
+.main h1{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.main p{
+    font-size: 25px;
+    font-weight: 400;
+}
+.rows{
+    display: grid;
+    grid-template-areas: "row" "row" "row";
+
+}
+.rows .row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 100px;
+}
+.row img{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+div.row:nth-child(odd){
+    background-color: rgba(65, 65, 125, 0.1);
+}
+.row h1, p{
+    text-align: center;
+    line-height: 1.6;
+}
+.row h1{
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: lightcoral;
+}
+.row p{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.contact{
+    height: 600px;
+    display: grid;
+    grid-template-rows: 100px 500px;
+}
+.contact h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    font-size: 25px;
+    align-content: center;
+}
+.contact .row2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+iframe{
+    width: 80%;
+}
+.contac-details{
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+
+}
+.contac-details > p{
+    font-size: 22px;
+    font-weight: 300;
+    height: 60px;
+    align-content: center;
+}
+.contac-details i{
+    margin-right: 10px;
+}
+form{
+    margin: 0 20px;
+    display: inline-grid;
+    grid-template-rows: repeat(2, 2fr);
+    /*row-gap: 5px;*/
+    width: 500px;
+}
+input{
+    height: 60px;
+    margin: 10px 0;
+    font-size: 18px;
+}
+textarea{
+    height: 100px;
+    font-size: 18px;
+}
+#submit{
+    margin: 10px auto;
+    height: 40px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 300;
+    background-color: #999999;
+    color: white;
+}
+
+footer{
+    text-align: center;
+    height: 200px;
+    background-color: #222222;
+    align-content: center;
+}
+address{
+    font-style: normal;
+    font-size: 25px;
+    font-weight: 200;
+    margin: 10px 0;
+    color: white;
+}
+footer > p{
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+@media (max-width: 912px) {
+    .logo img{
+        max-width: 76px;
+    }
+    .links a{
+        font-size: 13px;
+        margin-left: 15px;
+    }
+    input.button{
+        width: 100px;
+        font-size: 13px;
+        box-sizing: border-box;
+    }
+    .hero em{
+        font-size: 20px;
+    }
+    .hero strong{
+        font-size: 40px;
+    }
+    .hero > a.button{
+        font-size: 13px;
+        width: 70px;
+    }
+
+    .main h1{
+        font-size: 20px;
+    }
+    .main p{
+        font-size: 15px;
+    }
+
+    .rows .row{
+        padding: 50px
+    }
+    .row h1{
+        font-size: 18px;
+    }
+    .row p{
+        font-size: 15px;
+    }
+
+    .contact h1{
+        font-size: 20px;
+    }
+    .contac-details > p{
+        font-size: 17px;
+    }
+    form{
+
+        width: 100%;
+        margin: 10px 5px;
+        height: 100%;
+        /*grid-template-rows: repeat(3, 1fr) 40px;*/
+    }
+    input{
+        font-size: 13px;
+        height: 40px;
+    }
+    textarea{
+        font-size: 14px;
+        height: 60px;
+    }
+    #submit{
+        font-size: 13px;
+        height: 25px;
+    }
+    address{
+        font-size: 20px;
+    }
+    footer > p {
+        font-size: 18px;
+    }
+
+}

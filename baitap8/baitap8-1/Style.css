@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Handlee&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+    background-color: rgb(93, 163, 73);
+    font-family: "Dosis", sans-serif;
+    font-style: normal;
+}
+.layout{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+.sidebar {
+    display: grid;
+    margin: 20px;
+    grid-template-rows: 70px 100px 600px;
+    row-gap: 5px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.logo{
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+}
+.setlevel {
+    margin-left: auto;
+}
+/*.setlevel .rights{*/
+/*    margin-right: 10px;*/
+/*}*/
+.setlevel .rights .btn{
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+.setlevel .rights .level{
+    width: 120px;
+    text-align: center;
+    font-size: 12px;
+}
+.main .intro{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px;
+    color: whitesmoke;
+    line-height: 1.6;
+}
+.view1{
+    margin: 10px 20px;
+    height: 400px;
+}
+#view1-1{
+    width: 800px;
+    object-fit: cover;
+}
+.show-answer{
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    background-color: #967edc;
+    border: none;
+}
+
+#view2-2{
+    margin: 20px 10px;
+    width: 700px;
+    object-fit: cover;
+}
+
+
+
+

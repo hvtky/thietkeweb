@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Grid Garden</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="layout">
+        <section class="sidebar">
+            <div class="header">
+                <div class="logo">Pas Grid Garden</div>
+                <div class="setlevel">
+                    <div class="rights">
+                        <button id="left" class="btn left" onclick="myFunctionLeft()"><i class='bx bxs-left-arrow'></i></button>
+                        <select name="select_level" id="id_level" class="btn level" onclick="myFunctionSelectLevel()">
+                            <option value="1">Level 1 of 28</option>
+                            <option value="2">Level 2 of 28</option>
+                            <option value="3">Level 3 of 28</option>
+                            <option value="4">Level 4 of 28</option>
+                            <option value="5">Level 5 of 28</option>
+                            <option value="6">Level 6 of 28</option>
+                            <option value="7">Level 7 of 28</option>
+                            <option value="8">Level 8 of 28</option>
+                            <option value="9">Level 9 of 28</option>
+                            <option value="10">Level 10 of 28</option>
+                            <option value="11">Level 11 of 28</option>
+                            <option value="12">Level 12 of 28</option>
+                            <option value="13">Level 13 of 28</option>
+                            <option value="14">Level 14 of 28</option>
+                            <option value="15">Level 15 of 28</option>
+                            <option value="16">Level 16 of 28</option>
+                            <option value="17">Level 17 of 28</option>
+                            <option value="18">Level 18 of 28</option>
+                            <option value="19">Level 19 of 28</option>
+                            <option value="20">Level 20 of 28</option>
+                            <option value="21">Level 21 of 28</option>
+                            <option value="22">Level 22 of 28</option>
+                            <option value="23">Level 23 of 28</option>
+                            <option value="24">Level 24 of 28</option>
+                            <option value="25">Level 25 of 28</option>
+                            <option value="26">Level 26 of 28</option>
+                            <option value="27">Level 27 of 28</option>
+                            <option value="28">Level 28 of 28</option>
+                        </select>
+                        <button id="right" class="btn right" onclick="myFunctionRight()"><i class='bx bxs-right-arrow'></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <p class="intro">Chào mừng bạn đã đến Pas Grid Garden, tại đây bạn sẽ có đầy đủ đáp án 28 level của Grid Garden.
+                    Mà chẳng cần suy nghĩ gì, việc của bạn chỉ là copy & paste. Mọi việc thật đơn giản đúng không :)))
+                </p>
+            </div>
+            <div class="view1">
+                <div class="item">
+                    <img id="view1-1" src="./grip/question/view1/lv1.PNG" alt="">
+                </div>
+                <button class="show-answer" onclick="functionRusule()">Xem Đáp Án</button>
+            </div>
+        </section>
+        <section class="view2">
+            <div class="questions">
+                <img id="view2-2" src="./grip/question/view2/lv1.PNG" alt="" id="lv1">
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

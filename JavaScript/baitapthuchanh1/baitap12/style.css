@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Handlee&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+    font-family: "Dosis", sans-serif;
+    font-style: normal;
+}
+.main {
+    border: 2px solid lightcoral;
+    height: 800px;
+    width: 800px;
+    margin: auto;
+}
+.layout{
+    margin-top: 100px;
+    margin-left: 150px;
+}

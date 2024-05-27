@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Handlee&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+    font-family: "Dosis", sans-serif;
+    font-style: normal;
+}
+
+.main {
+    border: 2px solid lightcoral;
+    height: 800px;
+    width: 800px;
+    margin: auto;
+}
+.layout{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px;
+
+}
+.view{
+    display: grid;
+    grid-template-rows: 600px 100px;
+}
+.none1{
+    border: 3px solid rgba(152, 36, 229, 0.44);
+    margin: 2px;
+}
+.none2{
+    border: 3px solid rgba(58, 66, 220, 0.84);
+    margin: 2px;
+}
+.btns{
+    margin: auto;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 20px;
+}
+.red{
+    color: #12060b;
+    background-color: rgba(190, 54, 54, 0.78);
+}
+.blue{
+    color: #12060b;
+    background-color: #137e63;
+}
